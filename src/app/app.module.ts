@@ -15,6 +15,7 @@ import { RegisterPage } from '../pages/register/register';
 import { ForgetpasswordPage } from '../pages/forgetpassword/forgetpassword';
 import { MobileotpProvider } from '../providers/mobileotp/mobileotp';
 import { UtilProvider } from '../providers/util/util';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UtilProvider } from '../providers/util/util';
     LoginPage,
     ListPage,
     RegisterPage,
-    ForgetpasswordPage
+    ForgetpasswordPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { UtilProvider } from '../providers/util/util';
     ListPage,
     LoginPage,
     RegisterPage,
-    ForgetpasswordPage
+    ForgetpasswordPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,

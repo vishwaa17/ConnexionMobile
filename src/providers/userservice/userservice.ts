@@ -20,7 +20,7 @@ export class UserserviceProvider {
   formData: any = {
     first_name: "",
     last_name: "",
-    phone: "",
+    phone: 0,
     email: "",
     password: "",
     emailVerified: true
@@ -34,16 +34,16 @@ export class UserserviceProvider {
   register(e) {
     this.formData.first_name = e.first_name;
     this.formData.last_name = e.first_name;
-    this.formData.phone = e.phone;
+    this.formData.phone = e.mobile;
     this.formData.email = e.email;
     this.formData.password = e.password;
 
     const urlheaders = new HttpHeaders()
       .set('Content-Type', 'application/json')
       .set('Accept', 'application/json');
-
+    console.log('The form data',this.formData)
     return this.http.post(this.host + 'api/users', this.formData, { headers: urlheaders }).timeout(30000)
-      .map(res => {
+      .map((res: Response)=> {
         return res;
       })
       .catch((error: any) => {
