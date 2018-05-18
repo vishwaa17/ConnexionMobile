@@ -4,15 +4,36 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>welcome</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
 <ion-content padding>
+    <ion-slides pager>
 
+        <ion-slide style="background-color: white; text-align:  center;">
+            <img src="assets/images/svg/icon.svg" alt="" style="margin: 70px 0; height: 60px;">
+            <div>
+                <h2>Welcome!</h2>
+                <h1>{{username}}</h1>
+                <h2>Stepping into Connexion is like stepping into the healthcare experience of the future.</h2>
+            </div>
+            <button class="navigation" (click)="goToSlide(2)">Next</button>
+        </ion-slide>
+
+        <ion-slide style="background-color: white">
+            <img src="assets/images/svg/onboarding_manage.svg" alt="">
+            <div>
+                <h2>It combines touchless biometric scans and a broad array of virtual AI assistant apps that guide you to better health.</h2>
+            </div>
+            <button class="navigation" (click)="goToSlide(3)">Next</button>
+        </ion-slide>
+
+        <ion-slide style="background-color: white">
+            <img src="assets/images/svg/onboarding_monitor.svg" alt="">
+            <div>
+                <h2>We are a health experience company dedicated to transforming the way we manage, understand, and improve our health through cutting-edge, AI-powered technology.</h2>
+            </div>
+            <button class="navigation" (click)="tabsPage()">Get Started</button>
+        </ion-slide>
+
+    </ion-slides>
 </ion-content>

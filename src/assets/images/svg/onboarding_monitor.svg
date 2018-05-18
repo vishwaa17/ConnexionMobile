@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="244px" viewBox="0 0 375 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>onboarding_monitor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="118.5" cy="104.5" r="4.5"></circle>
+        <circle id="path-2" cx="246.5" cy="104.5" r="4.5"></circle>
+        <rect id="path-3" x="188" y="143" width="95" height="68" rx="4"></rect>
+        <rect id="path-4" x="193" y="148" width="85" height="55" rx="1"></rect>
+        <rect id="path-5" x="262" y="159" width="36" height="68" rx="4"></rect>
+        <rect id="path-6" x="265" y="166" width="30" height="53" rx="1"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="onboarding_monitor">
+            <circle id="Oval-14" fill="#00E097" opacity="0.535622668" cx="123" cy="168" r="32"></circle>
+            <circle id="Oval-14" fill="#00E097" opacity="0.139167444" cx="260.5" cy="72.5" r="39.5"></circle>
+            <path d="M181,187 C227.944204,187 266,148.944204 266,102 C266,78.1547899 256.181183,56.6028873 240.366116,41.1668592 C225.045968,26.213889 204.098994,17 181,17 C134.055796,17 96,55.0557963 96,102 C96,123.698268 102.5,135.5 102.5,135.5" id="Oval-2" stroke="#01BCD4" stroke-width="2" fill="#FFFFFF" transform="translate(181.000000, 102.000000) scale(1, -1) rotate(180.000000) translate(-181.000000, -102.000000) "></path>
+            <path d="M181,182 C225.18278,182 261,146.18278 261,102 C261,79.5574493 251.75876,59.2733057 236.873991,44.7452792 C222.455029,30.6718955 202.740229,22 181,22 C136.81722,22 101,57.81722 101,102" id="Oval-2" stroke="#CFD8DC" stroke-width="3" fill="#FFFFFF" stroke-dasharray="1,6" transform="translate(181.000000, 102.000000) scale(1, -1) rotate(180.000000) translate(-181.000000, -102.000000) "></path>
+            <polyline id="Path-3" stroke="#00E097" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="118 104.5 137.5 104.5 148 94.5 157.5 102.5 168.5 71 176 135.5 187.25 55 199 117.5 210 95 220.5 104.5 246.5 104.5"></polyline>
+            <g id="Oval-6">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#02C2C4" stroke-width="1" cx="118.5" cy="104.5" r="4"></circle>
+            </g>
+            <circle id="Oval-14" stroke="#01BCD4" fill="#FFFFFF" opacity="0.600000024" cx="289.5" cy="46.5" r="11.5"></circle>
+            <circle id="Oval-14" stroke="#01BCD4" fill="#FFFFFF" opacity="0.600000024" cx="82.5" cy="38.5" r="8.5"></circle>
+            <g id="Oval-6">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <circle stroke="#00AEEF" stroke-width="1" cx="246.5" cy="104.5" r="4"></circle>
+            </g>
+            <g id="Rectangle-43">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#1F3C60" stroke-width="2" x="189" y="144" width="93" height="66" rx="4"></rect>
+            </g>
+            <g id="Rectangle-43" opacity="0.523787313">
+                <use fill="#02C2C4" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <rect stroke="#546E7A" stroke-width="1" x="193.5" y="148.5" width="84" height="54" rx="1"></rect>
+            </g>
+            <path d="M193,149.008757 C193,148.451636 193.457323,148 193.998842,148 L277.001158,148 C277.552803,148 278,148.453036 278,148.99703 L278,155.00297 C278,155.553614 277.602115,156.198943 277.102923,156.448539 L193.897077,198.051461 C193.401635,198.299182 193,198.047999 193,197.491243 L193,149.008757 Z" id="Rectangle-43" fill="#FFFFFF" opacity="0.28515625"></path>
+            <g id="Rectangle-43">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <rect stroke="#1F3C60" stroke-width="2" x="263" y="160" width="34" height="66" rx="4"></rect>
+            </g>
+            <g id="Rectangle-43" opacity="0.387534981">
+                <use fill="#ECEFF1" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <rect stroke="#455A64" stroke-width="1" x="265.5" y="166.5" width="29" height="52" rx="1"></rect>
+            </g>
+            <path d="M266,167.997721 C266,167.446695 266.439813,167 266.996535,167 L293.003465,167 C293.553836,167 294,167.444684 294,167.999788 L294,179.09153 L266.837984,196.451419 C266.375178,196.747209 266,196.539824 266,195.989274 L266,167.997721 Z" id="Rectangle-43" fill="#ECEFF1"></path>
+            <circle id="Oval-14" stroke="#02C2C4" fill="#FFFFFF" opacity="0.600000024" cx="135.5" cy="217.5" r="6.5"></circle>
+        </g>
+    </g>
+</svg>

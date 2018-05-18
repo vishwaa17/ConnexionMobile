@@ -23,7 +23,8 @@
       <ion-label floating>Password</ion-label>
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
-    <div *ngIf="credentialsForm.controls.password.hasError('pattern') && (credentialsForm.controls.password.dirty || submitted)" class="validator-error" style="font-size: 10px;margin-left: 2em;
+    <div *ngIf="credentialsForm.controls.password.hasError('pattern') && (credentialsForm.controls.password.dirty || submitted)"
+      class="validator-error" style="font-size: 10px;margin-left: 2em;
     margin-top: 1em;">
       Passwords should be at least 8 characters long and contain one number, one character and one special character.
     </div>

@@ -1,0 +1,24 @@
+page-setting {
+    .content {
+        background: #eee !important;
+    }
+    section {
+        margin: 12px 0;
+        small {
+            margin-bottom: 6px;
+            display: block;
+            padding: 0 12px;
+        }
+        .item {
+            font-size: 85%;
+            min-height: initial !important;
+            padding: 0 !important;
+        }
+        .item-inner {
+            padding: 12px !important;
+        }
+        .label {
+            margin: 0 !important;
+        }
+    }
+}

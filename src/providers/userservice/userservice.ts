@@ -87,4 +87,8 @@ export class UserserviceProvider {
   handleError(error: Response) {
     return Observable.throw(error);
   }
+  logout(accesstoken){
+
+    return this.http.post(this.host + 'api/users/logout?access_token=',+ accesstoken);
+  }
 }

@@ -28,29 +28,29 @@
           </ion-item>
         </ion-col>
         <ion-col style="padding: 0px;" col-4>
-          <button [disabled]="!isenabled" style="overflow: none;-webkit-box-flex: none; -webkit-flex: 0;-ms-flex: none;width: 90%;float:right;height: 2.5em; flex: none !important;margin-top: 1em;"
+          <button [disabled]="!isenabled" style="overflow: none;-webkit-box-flex: none; -webkit-flex: 0;-ms-flex: none;width: 90%;float:right;height: 2.5em; flex: none !important;margin-top: 1.5em;"
             ion-button block color="secondary" (click)="sendOTP()">
             Send OTP
           </button>
         </ion-col>
       </ion-row>
-    </ion-grid >
+    </ion-grid>
     <ion-grid class="OTPVerification" style="padding: 0px;">
-        <ion-row>
-          <ion-col style="padding: 0px;" col-8>
-            <ion-item>
-              <ion-label floating>Verify OTP</ion-label>
-              <ion-input formControlName="verifyotp" [(ngModel)]="verifyotp" type="tel" type="text"></ion-input>
-            </ion-item>
-          </ion-col>
-          <ion-col style="padding: 0px;" col-4>
-            <button [disabled]="isenabled" style="overflow: none;-webkit-box-flex: none; -webkit-flex: 0;-ms-flex: none;width: 90%;float:right;height: 2.5em; flex: none !important;margin-top: 1em;"
-              ion-button block color="secondary" (click)="verifyOTP()">
-              Verify OTP
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <ion-row>
+        <ion-col style="padding: 0px;" col-8>
+          <ion-item>
+            <ion-label floating>Verify OTP</ion-label>
+            <ion-input formControlName="verifyotp" [(ngModel)]="verifyotp" type="tel" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col style="padding: 0px;" col-4>
+          <button [disabled]="isenabled" style="overflow: none;-webkit-box-flex: none; -webkit-flex: 0;-ms-flex: none;width: 90%;float:right;height: 2.5em; flex: none !important;margin-top: 1.5em;"
+            ion-button block color="secondary" (click)="verifyOTP()">
+            Verify OTP
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
     <!-- <ion-item style="overflow: none;-webkit-box-flex: none; -webkit-flex: 0;-ms-flex: none; flex: none !important;"></ion-item> -->
     <ion-item>
@@ -65,7 +65,8 @@
       <ion-label floating>Password</ion-label>
       <ion-input [formControl]="registerForm.controls['password']" type="password"></ion-input>
     </ion-item>
-    <div *ngIf="registerForm.controls.password.hasError('pattern') && (registerForm.controls.password.dirty || submitted)" class="validator-error" style="font-size: 10px;margin-left: 2em;
+    <div *ngIf="registerForm.controls.password.hasError('pattern') && (registerForm.controls.password.dirty || submitted)" class="validator-error"
+      style="font-size: 10px;margin-left: 2em;
       margin-top: 1em;">
       Passwords should be at least 8 characters long and contain one number, one character and one special character.
     </div>
@@ -76,12 +77,17 @@
         </button>
       </ion-col>
     </ion-row>
-
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button block color="primary" (click)="resetRegister(registerForm.value)">
+          Cancel
+        </button>
+      </ion-col>
+    </ion-row>
   </form>
 </ion-content>
 <ion-footer>
   <ion-toolbar style="min-height: 12px !important">
     <ion-title style="font-size: 10px;"> Copyright © 2018 Connexion Health, LLC. All Rights Reserved.</ion-title>
   </ion-toolbar>
-
 </ion-footer>

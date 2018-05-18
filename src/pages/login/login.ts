@@ -5,6 +5,7 @@ import { regexValidators } from '../validation/validation';
 import { RegisterPage } from '../register/register';
 import { ForgetpasswordPage } from '../forgetpassword/forgetpassword';
 import { UserserviceProvider } from '../../providers/userservice/userservice';
+import { WelcomePage } from '../welcome/welcome';
 
 /**
  * Generated class for the LoginPage page.
@@ -42,26 +43,20 @@ export class LoginPage {
 
   onSignIn(e) {
     this.loginService.signIN(e).subscribe((data) => {
-      console.log('The response', data)
-      // console.log('Here I am', res.status);
-      // if (res.status == 200) {
-      //   console.log('Correct');
-      // }
-      // else {
-      //   console.log('Incorrect UserName or Password');
-      // }
+      console.log(data);
+      this.navCtrl.push(WelcomePage);
     },
       err => {
         var error = JSON.stringify(err.error);
         var errorMessage = JSON.parse(error);
-        console.log('Inside function',errorMessage)
-        this.showToastMessage(errorMessage.message);
+        console.log('Inside function',errorMessage.error)
+        this.showToastMessage(errorMessage.error.message);
       })
 
   }
   showToastMessage = function (error: any) {
     let toast = this.toast.create({
-      message: 'Incoreect Email or Password',
+      message: error.toUpperCase(),
       duration: 3000,
       position: 'bottom'
     });

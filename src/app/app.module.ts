@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,16 +15,22 @@ import { ForgetpasswordPage } from '../pages/forgetpassword/forgetpassword';
 import { MobileotpProvider } from '../providers/mobileotp/mobileotp';
 import { UtilProvider } from '../providers/util/util';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { TabspagePage } from '../pages/tabspage/tabspage';
+import { KioskPage } from '../pages/kiosk/kiosk';
+import { SettingPage } from '../pages/setting/setting';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    LoginPage,
-    ListPage,
-    RegisterPage,
-    ForgetpasswordPage,
-    WelcomePage
+    // HomePage,
+    // LoginPage,
+    // ListPage,
+    // RegisterPage,
+    // ForgetpasswordPage,
+    // WelcomePage,
+    // TabspagePage,
+    // KioskPage,
+    // SettingPage
   ],
   imports: [
     BrowserModule,
@@ -36,11 +41,13 @@ import { WelcomePage } from '../pages/welcome/welcome';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     LoginPage,
     RegisterPage,
     ForgetpasswordPage,
-    WelcomePage
+    WelcomePage,
+    TabspagePage,
+    KioskPage,
+    SettingPage  
   ],
   providers: [
     StatusBar,

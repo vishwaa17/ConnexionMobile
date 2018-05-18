@@ -1,3 +1,28 @@
 page-welcome {
-
+    * {
+        box-sizing: border-box;
+        color: #455A64;
+        font-weight: 300;
+    }
+    h2 {
+        font-size: 100%;
+        margin: 20px !important;
+    }
+    button.navigation {
+        position: absolute;
+        bottom: 10px;
+        width: 80%;
+        // left: 0;
+        /* Rectangle 4: */
+        background: #02C2C4;
+        border-radius: 100px;
+        padding: 12px;
+        color: white;
+        font-size: 80%;
+        left: 10%;
+        font-weight: normal;
+    }
+    .swiper-pagination {
+        bottom: 60px !important;
+    }
 }
