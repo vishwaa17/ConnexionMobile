@@ -1,0 +1,10 @@
+page-login {
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        outline: none;
+        // border: 0;
+        box-shadow: none;
+    }
+    }
+
+    
